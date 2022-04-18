@@ -89,46 +89,74 @@ const navigation = {
 const transferFeatures = [
   {
     id: 1,
-    name: 'تمكين الشركات',
+    name: 'التنقيب عن البيانات',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'تتلخص أنشطتنا في التنقيب عن البيانات بسحب البيانات المهمة من أكبر المنصات الرقمية على الأنترنت وتطبيقات الجوال. نقوم بذلك بشكل أخلاقي محافظين بذلك على خصوصية المستخدمين وطالبي البيانات وسلامة خوادم المواقع والتطبيقات.',
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: 'فتح قيم إقتصادية جديدة',
+    name: 'تنظيف ومعالجة البيانات ثم التأكد منها',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'أحد أهم خطوات أنابيب البيانات هي تنظيف البيانات وتنقيحها من الشوائب والحالات الشاذة. ثم التأكد من نسبة منها بشرياً قبل تقديمها',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'توفير خدماتنا آنياً',
+    name: 'جمع البيانات بأجهزة الأي أو تي',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'تختص أحد أقسام مجموعة بنك نيورل في جمع البيانات من أجهزة الأيوتي المربوطة بخوادمنا.',
     icon: LightningBoltIcon,
   },
   {
     id: 4,
-    name: 'توفير خدماتنا آنياً',
+    name: 'البحث عن الشركات الراغبة ببيع بياناتها',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'نبحث بشكل دوري عن الشركات التي تملك بيانات ضخمة ذات القيمة الممتازة وترغب بالإستفادة من بيعها عبرنا',
+    icon: LightningBoltIcon,
+  },
+  {
+    id: 5,
+    name: 'البحث عن البيانات المهمة والمتعلقة للبيانات المطلوبة',
+    description:
+      'نبحث بشكل متكرر عن البيانات الضخمة أينما كانت في الأرجاء ونحاول ايجاد البيانات المهمة المتعلقة بالبيانات التي تطلب منا',
     icon: LightningBoltIcon,
   },
 ]
 const communicationFeatures = [
   {
     id: 1,
-    name: 'Mobile notifications',
+    name: 'محللي البيانات',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'يقضي محللي البيانات 70٪ من وقتهم في تنظيف بياناتهم لتحضيرها لإدخالها لنماذجهم أو خوارزمياتهم',
     icon: AnnotationIcon,
   },
   {
     id: 2,
-    name: 'Reminder emails',
+    name: 'شركات التحليل والإستشارات',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'جودة الإستشارات المقدمة من شركات التحليل والإستشارات تعتمد بشكل مباشر على جودة البيانات التي تستعملها في تدريب نماذجها وخوارزمياتها',
+    icon: MailIcon,
+  },
+  {
+    id: 3,
+    name: 'شركات الذكاء الإصطناعي',
+    description:
+      'تحتاج شركات الذكاء الإصطناعي إلى البيانات لتشغل أعمالها وتركز على تقديم خدماتها',
+    icon: MailIcon,
+  },
+  {
+    id: 4,
+    name: 'الحكومات',
+    description:
+      'يمكن أن تستفيد الحكومات من خدماتنا في تنظيفه البيانات وتحضير أنابيب البيانات لبياناتها المفتوحة',
+    icon: MailIcon,
+  },
+  {
+    id: 5,
+    name: 'المدن الذكية',
+    description:
+      'بناء بينة تحتية مولدة للبيانات النظيفة يعتبر من أساسيات المدن الذكية الحديثة. بإمكاننا العمل على البنية التحتية لتوليد بيانات ضخمة مفيدة ومدرة للأرباح للمدن الذكية',
     icon: MailIcon,
   },
 ]
@@ -327,12 +355,10 @@ const Home: NextPage = () => {
       <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center text-right">
         <div className="relative font-Tajawal">
           <h3 className="text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl">
-            تحليل البيانات بلوحة التحكم
+            أنشطتنا الرئيسية
           </h3>
           <p className="mt-3 text-lg text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima sequi recusandae, porro maiores
-            officia assumenda aliquam laborum ab aliquid veritatis impedit odit adipisci optio iste blanditiis facere.
-            Totam, velit.
+            لخصنا أنشطتنا في مجموعة بنك نيورل بشكل مبسط. نعمل حالياً على بعض هذه الأنشطة ونسعى لتقديم غيرها
           </p>
 
           <dl className="mt-10 space-y-10">
@@ -404,11 +430,10 @@ const Home: NextPage = () => {
 
       <div className="relative mt-12 sm:mt-16 lg:mt-24">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
-          <div className="lg:col-start-2 text-right">
-            <h3 className="text-2xl font-Tajawal font-extrabold text-gray-900 tracking-tight sm:text-3xl">مواردنا الأساسية</h3>
-            <p className="mt-3 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus,
-              cum deleniti sunt in labore nihil quod quibusdam expedita nemo.
+          <div className="lg:col-start-2 text-right font-Tajawal">
+            <h3 className="text-2xl font-Tajawal font-extrabold text-gray-900 tracking-tight sm:text-3xl">شرائح عملائنا</h3>
+            <p className="mt-3 text-lg text-gray-500 font-Tajawal">
+شريحة عملائنا تتراوح ما بين المحللين, رجال ورواد الأعمال, المستثمرين, الشركات الكبيرة وأخيراً الحكومات
             </p>
 
             <dl className="mt-10 space-y-10">
