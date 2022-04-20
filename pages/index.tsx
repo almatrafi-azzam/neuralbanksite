@@ -8,6 +8,10 @@ import {
   RefreshIcon,
   ServerIcon,
   ShieldCheckIcon,
+  BadgeCheckIcon,
+  CashIcon,
+  AtSymbolIcon,
+  ChartBarIcon,
 } from '@heroicons/react/outline'
 import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/outline'
 import { SVGProps } from 'react'
@@ -164,59 +168,69 @@ const features = [
   {
     name: 'شريحة عملائنا',
     description: 'المدن الذكية, الشركات الصغيرة والمتوسطة, محللي السوق',
-    icon: CloudUploadIcon,
+    icon: AtSymbolIcon,
   },
   {
     name: 'القيم المقدمة',
     description: 'منصة ولوحة تحكم لتحليل البيانات بأدوات الذكاء الإصطناعي',
-    icon: LockClosedIcon,
+    icon: BadgeCheckIcon,
   },
   {
     name: 'القنوات',
     description: 'نقدم بيانات نظيفة ومعاد معالجتها عبر خدمات أمازون ويب وأيضاً لوحات تحكم',
-    icon: RefreshIcon,
+    icon: ChartBarIcon,
   },
   {
     name: 'مصادر إراداتنا',
-    description: 'رسوم إشتراك سنوي, أجور الإستخدام',
-    icon: ShieldCheckIcon,
+    description: 'بيع أصولنا من البيانات والنماذج, رسوم إشتراك سنوي, أجور الإستخدام',
+    icon: CashIcon,
   },
   {
     name: 'مواردنا',
-    description: 'البيانات, الخوادم, أجهزة المعالجة',
-    icon: CogIcon,
+    description: 'البيانات, النماذج المدربة, الخوادم, أجهزة المعالجة',
+    icon: ServerIcon,
   },
   {
     name: 'أنشطتنا الرئيسية',
-    description: 'إنتاج وتحليل البيانات',
+    description: 'إنتاج وتحليل البيانات, تدريب النماذج, البحث والتطوير',
+    icon: CogIcon,
+  },
+  {
+    name: 'العلاقة مع العملاء',
+    description: 'علاقة محدودة بنقاط الشراء فقط, شراكة مستمرة لفترة طويلة',
     icon: ServerIcon,
   },
+  {
+    name: 'هيكل التكلفة',
+    description: 'رواتب الموظفين, الخوادم, أجهزة المعالجة',
+    icon: ServerIcon,
+  }
 ]
 
 
 const featurestwo = [
   {
-    name: '١٠ مليون مبيعات',
+    name: '10 مليون مبيعات',
     description: 'المدن الذكية, الشركات الصغيرة والمتوسطة, محللي السوق',
     icon: CloudUploadIcon,
   },
   {
-    name: 'أقل من ٥٠ موظف',
+    name: 'أقل من 50 موظف',
     description: 'منصة ولوحة تحكم لتحليل البيانات بأدوات الذكاء الإصطناعي',
     icon: LockClosedIcon,
   },
   {
-    name: 'أقل من مليون ريال من الأصول',
+    name: 'أقل من 1,000,000 ريال من الأصول',
     description: 'نقدم بيانات نظيفة ومعاد معالجتها عبر خدمات أمازون ويب وأيضاً لوحات تحكم',
     icon: RefreshIcon,
   },
   {
-    name: '١٠٠ زبون تجاري',
+    name: '100 زبون تجاري',
     description: 'رسوم إشتراك سنوي, أجور الإستخدام',
     icon: ShieldCheckIcon,
   },
   {
-    name: '١٠٠,٠٠٠ زبون غير تجاري',
+    name: '100,000 زبون تجاري',
     description: 'البيانات, الخوادم, أجهزة المعالجة',
     icon: CogIcon,
   },
@@ -290,7 +304,7 @@ const Home: NextPage = () => {
           <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
             <h2 className="text-base font-semibold uppercase tracking-wider text-indigo-600"></h2>
             <p className="mt-8 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              أهدافنا في أول ٣ سنوات
+              أهدافنا في أول 3 سنوات
             </p>
             <p className="mx-auto mt-6 max-w-prose text-xl text-gray-500">
               نسعى في مجموعة بنك نيورل لأن نكون المزود الأعلى جودة وموثوقية للبيانات الضخمة في المملكة العربية السعودية ومنطقة الشرق الأوسط.
